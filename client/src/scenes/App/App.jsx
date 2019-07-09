@@ -16,6 +16,7 @@ const App = () => (
   <div className="app theme">
     <Helmet>
       <title>FAQ</title>
+      <meta property="og:description" content="Internal Knowledge Database for your organization" />
     </Helmet>
     <AlertProvider>
       <ConfigurationProvider>

@@ -34,6 +34,7 @@ const Read = ({ history, match, zNode, createFlag, removeFlag }) => {
     <div>
       <Helmet>
         <title>FAQ - {markdown.title(zNode.question.title)}</title>
+        <meta property="og:description" content={markdown.title(zNode.question.title)} />
       </Helmet>
       <ActionMenu backLink="/" backLabel={intl('menu.home')} goBack>
         <FlagsDropdown
